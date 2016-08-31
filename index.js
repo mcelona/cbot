@@ -4,6 +4,7 @@ var beepboop = require("beepboop-botkit");
 var token = process.env.SLACK_TOKEN
 
 var controller = Botkit.slackbot({
+  retry: Infinity,
   debug: false
 });
 
