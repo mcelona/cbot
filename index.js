@@ -72,12 +72,12 @@ controller.on("direct_mention", function(bot, message) {
   
   else if ( message.text.indexOf("help") > -1 ) {
 
-    var reply = "Help"
+    var reply = "I'm happy to help you"
     bot.reply(message, reply);
 
   } else {
 
-     var reply = "What"
+     var reply = "What?"
      bot.reply(message, reply);
 
   }
