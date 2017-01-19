@@ -68,12 +68,7 @@ controller.on("direct_mention", function(bot, message) {
     var reply = "Don't worry about it"
     bot.reply(message, reply);
 
-  } else if ( message.text.indexOf("what do you think of this crap") > -1 ) {
-
-    var reply = "Seems very carb heavy"
-    bot.reply(message, reply);
-
-  }
+  } 
   
   else if ( message.text.indexOf("help") > -1 ) {
 
@@ -103,9 +98,6 @@ controller.on("mention", function(bot, message) {
 
   } else {
     var reply = "Don't worry about it version 1"
-    bot.reply(message, reply);
-  } else if ( message.text.indexOf("what do you think of this crap") > -1 ) {
-    var reply = "Seems very carb heavy"
     bot.reply(message, reply);
   }
 })
