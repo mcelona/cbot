@@ -75,6 +75,11 @@ controller.on("direct_mention", function(bot, message) {
     var reply = "I'm happy to help you"
     bot.reply(message, reply);
 
+  else if ( message.text.indexOf("what do you think of this crap") > -1 ) {
+
+    var reply = "seems very carb heavy"
+    bot.reply(message, reply);
+
   } else {
 
      var reply = "What?"
