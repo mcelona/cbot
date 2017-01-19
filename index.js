@@ -60,7 +60,7 @@ controller.on("direct_mention", function(bot, message) {
   
   if ( message.text.indexOf("hello") > -1 | message.text.indexOf("hi") > -1 | message.text.indexOf("hey") > -1 ) {
 
-    var intro = "Hi <@"+message.user+">, I'm here to talk to you v1 <"+message.text+">";
+    var intro = "Hi <@"+message.user+">, I'm here to talk to you v1 +message.text+";
     bot.reply(message, intro);
 
   } else if ( message.text.indexOf("thanks") > -1 | message.text.indexOf("thank you") > -1 ) {
