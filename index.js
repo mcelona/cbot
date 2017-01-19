@@ -97,7 +97,7 @@ controller.on("mention", function(bot, message) {
     bot.reply(message, reply);
 
   } else {
-    var reply = "Don't worry about it"
+    var reply = "Don't worry about it version 1"
     bot.reply(message, reply);
   }
 })
