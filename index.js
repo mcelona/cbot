@@ -56,9 +56,12 @@ controller.on("bot_channel_join", function(bot, message) {
 
 
 controller.on("direct_mention", function(bot, message) {
-  console.log( message );
   
-  if ( message.text.indexOf("hello") > -1 | message.text.indexOf("hi") > -1 | message.text.indexOf("hey") > -1 ) {
+  if ( message.text.match(/^what do you think of this crap[?]?/) != null ) {
+    var reply = "seems very carb heavy"
+    bot.reply(message, reply);
+  
+  } else if ( message.text.indexOf("hello") > -1 | message.text.indexOf("hi") > -1 | message.text.indexOf("hey") > -1 ) {
 
     var intro = "Hi <@"+message.user+">, I'm here to talk to you v1 "+message.text+"";
     bot.reply(message, intro);
@@ -73,11 +76,6 @@ controller.on("direct_mention", function(bot, message) {
     var reply = "I'm happy to help you"
     bot.reply(message, reply);
     
-  } else if ( message.text.indexOf("what do you think of this crap") > -1 ) {
-
-    var reply = "seems very carb heavy"
-    bot.reply(message, reply);
-
   } else {
 
      var reply = "What?"
