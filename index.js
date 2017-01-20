@@ -85,22 +85,22 @@ controller.on("direct_mention", function(bot, message) {
 })
 
 controller.on("mention", function(bot, message) {
-  console.log( message );
-
-  if ( message.text.indexOf("hello") > -1 | message.text.indexOf("hi") > -1 | message.text.indexOf("hey") > -1 ) {
-
-    var intro = "Hi <@"+message.user+">, I'm here to talk to you";
-    bot.reply(message, intro);
-
-  } else if ( message.text.indexOf("thanks") > -1 | message.text.indexOf("thank you") > -1 ) {
-
-    var reply = "Don't worry about it"
-    bot.reply(message, reply);
-
-  } else {
-    var reply = "Don't worry about it version 1"
-    bot.reply(message, reply);
-  }
+  // console.log( message );
+  // 
+  //   if ( message.text.indexOf("hello") > -1 | message.text.indexOf("hi") > -1 | message.text.indexOf("hey") > -1 ) {
+  // 
+  //     var intro = "Hi <@"+message.user+">, I'm here to talk to you";
+  //     bot.reply(message, intro);
+  // 
+  //   } else if ( message.text.indexOf("thanks") > -1 | message.text.indexOf("thank you") > -1 ) {
+  // 
+  //     var reply = "Don't worry about it"
+  //     bot.reply(message, reply);
+  // 
+  //   } else {
+  //     var reply = "Don't worry about it version 1"
+  //     bot.reply(message, reply);
+  //   }
 })
 
 controller.on("user_channel_join", function(bot, message) {
